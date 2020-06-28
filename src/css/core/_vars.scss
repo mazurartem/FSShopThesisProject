@@ -1,5 +1,6 @@
 $nav-color: #ffffff;
 $text-color: #2f1e17;
+$black-text-color: #000000;
 $green-btn-color: #609416;
 $red-btn-color: #aa282c;
 $footer-color: #462e23;
@@ -12,6 +13,7 @@ $H640: calcRem(64px);
 $H560: calcRem(56px);
 $H400: calcRem(40px);
 $H360: calcRem(36px);
+$H320: calcRem(32px);
 $H240: calcRem(24px);
 $H200: calcRem(20px);
 $H180: calcRem(18px);
@@ -20,7 +22,7 @@ $H160: calcRem(16px);
 $base-font: "Alegreya";
 
 $max-width: 1440px;
-$grid-width: 1110;
+$grid-width: 1110px;
 
 $screen-iphone: 375px;
 $screen-iphone-plus: 414px;
