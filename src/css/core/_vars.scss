@@ -1,0 +1,32 @@
+$nav-color: #ffffff;
+$text-color: #2f1e17;
+$green-btn-color: #609416;
+$red-btn-color: #aa282c;
+$footer-color: #462e23;
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+$H640: calcRem(64px);
+$H560: calcRem(56px);
+$H400: calcRem(40px);
+$H360: calcRem(36px);
+$H240: calcRem(24px);
+$H200: calcRem(20px);
+$H180: calcRem(18px);
+$H160: calcRem(16px);
+
+$base-font: "Alegreya";
+
+$max-width: 1440px;
+$grid-width: 1110;
+
+$screen-iphone: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;

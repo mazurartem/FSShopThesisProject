@@ -1,0 +1,25 @@
+.aboutus {
+  &__box {
+    max-width: $grid-width;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__title {
+    width: 471px;
+    margin: 0 auto;
+    text-align: center;
+    @include text($H560, 500, $text-color);
+    margin-bottom: 32px;
+  }
+  &__text {
+    text-align: center;
+    width: 540px;
+    @include text($H200, 500, $text-color);
+    margin-bottom: 40px;
+  }
+  &__button {
+    padding-left: 69px;
+    padding-right: 70px;
+  }
+}
