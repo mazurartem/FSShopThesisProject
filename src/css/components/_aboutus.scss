@@ -15,14 +15,7 @@
     width: 540px;
   }
   &__image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    @extend %image-absolute;
   }
 
   &__title {
@@ -55,5 +48,23 @@
   &__holder-title {
     @include text($H320, 500, $black-text-color);
     text-align: center;
+    padding-top: 16px;
+    margin-bottom: 18px;
+  }
+  &__holder-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+  &__holder-img {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  &__holder-text {
+    width: 177px;
+    @include text($H180, 500, $black-text-color);
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
