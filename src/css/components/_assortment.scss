@@ -24,23 +24,12 @@
   &__left {
     @extend %shadow;
   }
-  &__left-img {
-    position: relative;
-    &:hover {
-      cursor: pointer;
-      display: block;
-    }
-  }
+
   &__central-up {
     margin-bottom: 19px;
     @extend %shadow;
   }
   &__central-up-img {
-    position: relative;
-    &:hover {
-      display: block;
-      cursor: pointer;
-    }
   }
 
   &__central-down {
