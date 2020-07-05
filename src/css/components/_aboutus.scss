@@ -32,10 +32,12 @@
     @include text($H200, 500, $text-color);
     margin-bottom: 40px;
   }
+
   &__button {
     padding-left: 69px;
     padding-right: 70px;
   }
+
   &__holder {
     max-width: $grid-width;
     margin: 0 auto;
