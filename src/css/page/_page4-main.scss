@@ -1,4 +1,4 @@
-.main-page1 {
+.main-page4 {
   &__box {
     width: $grid-width;
     margin: 0 auto;
@@ -67,13 +67,13 @@
     left: 307px;
     top: 306px;
   }
-  &__container-text {
-    display: block;
-    @include text($H240, 500, $black-text-color);
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(236, 236, 236);
+
+  &__button-box {
+    margin: 0 auto;
+    width: 540px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   &__button {
     text-align: center;
