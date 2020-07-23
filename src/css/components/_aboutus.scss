@@ -1,18 +1,21 @@
 .aboutus {
-  padding-top: 48px;
   &__box {
     display: flex;
     flex-direction: column-reverse;
+    padding-top: 32px;
+    max-width: $grid-width;
 
-    @media screen and (min-width: $screen-iphone) {
-      max-width: $grid-width;
+    @media screen and (min-width: $screen-tablet) {
       margin: 0 auto;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       margin-bottom: 64px;
+      padding-top: 48px;
+    }
+    @media screen and (min-width: $screen-desktop) {
     }
   }
-
   &__image-wrapper {
     padding-bottom: 0%;
     background-color: red;
@@ -26,22 +29,39 @@
   }
 
   &__title {
-    width: 471px;
     margin: 0 auto;
     text-align: center;
-    @include text($H560, 500, $text-color);
     margin-bottom: 32px;
+    @include text($H320, 500, $text-color);
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H360, 500, $text-color);
+    }
+    @media screen and (min-width: $screen-tablet) {
+      width: 300px;
+    }
   }
   &__text {
+    width: auto;
     text-align: center;
-    width: 540px;
     @include text($H200, 500, $text-color);
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H200, 500, $text-color);
+      margin-bottom: 40px;
+      width: 400px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      width: 540px;
+    }
   }
 
   &__button {
+    display: block;
     padding-left: 69px;
     padding-right: 70px;
+    @media screen and (min-width: $screen-desktop) {
+      display: block;
+    }
   }
 
   &__holder {

@@ -10,16 +10,25 @@
     margin-bottom: 32px;
   }
   &__text {
-    width: 920px;
+    width: 346px;
     text-align: center;
     margin: 0 auto;
-    @include text($H200, 500, $black-text-color);
-    margin-bottom: 64px;
+    @include text($H160, 500, $black-text-color);
+    @media screen and (min-width: $screen-desktop) {
+      width: 920px;
+
+      @include text($H200, 500, $black-text-color);
+      margin-bottom: 64px;
+    }
   }
   &__holder {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    flex-direction: column;
+    @media screen and (min-width: $screen-desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
   }
   &__buttons {
     top: 50%;
