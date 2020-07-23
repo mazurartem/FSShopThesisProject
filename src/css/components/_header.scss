@@ -5,19 +5,19 @@
       rgba(0, 0, 0, 0) 21.74%
     ),
     url(../images/background.jpg);
-
   background-size: cover;
   background-position: center center;
   position: relative;
   min-height: 100vh;
   margin-bottom: 48px;
-
   &__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 40px;
-    margin-bottom: 96px;
+    @media screen and (min-width: $screen-iphone) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 40px;
+      margin-bottom: 96px;
+    }
   }
   &__logo {
     padding-left: 25px;
@@ -45,12 +45,25 @@
     margin: 0 auto;
   }
   &__title {
-    @include text($H640, 500, $text-color);
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+    @include text($H360, 500, $text-color);
+    @media screen and (min-width: $screen-iphone) {
+      @include text($H640, 500, $text-color);
+      margin-bottom: 64px;
+    }
   }
   &__button {
-    padding-right: 127px;
-    padding-left: 127px;
+    width: 100%;
+    @media screen and (min-width: $screen-iphone) {
+      width: auto;
+    }
+    padding-right: 50px;
+    padding-left: 50px;
+
+    @media screen and (min-width: $screen-iphone) {
+      padding-right: 127px;
+      padding-left: 127px;
+    }
   }
 }

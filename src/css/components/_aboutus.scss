@@ -1,11 +1,16 @@
 .aboutus {
   padding-top: 48px;
   &__box {
-    max-width: $grid-width;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 64px;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: $screen-iphone) {
+      max-width: $grid-width;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 64px;
+    }
   }
 
   &__image-wrapper {
