@@ -20,9 +20,20 @@
     padding-bottom: 0%;
     background-color: red;
     position: relative;
-    height: 540px;
-    width: 540px;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: $screen-iphone-plus) {
+      height: 350px;
+      width: 350px;
+    }
+
+    @media screen and (min-width: $screen-desktop) {
+      height: 540px;
+      width: 540px;
+    }
   }
   &__image {
     @extend %image-absolute;
@@ -46,12 +57,12 @@
     @include text($H200, 500, $text-color);
     margin-bottom: 24px;
     @media screen and (min-width: $screen-tablet) {
-      @include text($H200, 500, $text-color);
+      @include text($H160, 500, $text-color);
       margin-bottom: 40px;
-      width: 400px;
+      width: 350px;
     }
     @media screen and (min-width: $screen-desktop) {
-      width: 540px;
+      width: 450px;
     }
   }
 
@@ -59,9 +70,6 @@
     display: block;
     padding-left: 69px;
     padding-right: 70px;
-    @media screen and (min-width: $screen-desktop) {
-      display: block;
-    }
   }
 
   &__holder {
@@ -82,9 +90,15 @@
   }
   &__holder-list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-left: 57px;
     padding-right: 57px;
+    @media screen and (min-width: $screen-desktop) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
   }
   &__holder-img {
     text-align: center;
@@ -92,6 +106,7 @@
   }
   &__holder-text {
     width: 177px;
+    margin: 0 auto;
     @include text($H180, 500, $black-text-color);
     text-align: center;
     margin-bottom: 30px;
