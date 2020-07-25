@@ -1,0 +1,25 @@
+.burger {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
+  &__items {
+    width: 100%;
+    height: 2px;
+    background-color: $nav-color;
+    display: block;
+    transition: all ease 0.5s;
+  }
+  .header.active &__items {
+    width: 50%;
+  }
+}
