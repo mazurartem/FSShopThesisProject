@@ -1,38 +1,81 @@
 .doityourself {
   &__box {
-    max-width: $grid-width;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 144px;
+    flex-direction: column;
+    max-width: $grid-width;
+    @media screen and (min-width: $screen-tablet) {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 144px;
+    }
   }
   &__image-wrapper {
     padding-bottom: 0%;
     background-color: red;
     position: relative;
-    height: 540px;
-    width: 540px;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: $screen-iphone-plus) {
+      height: 350px;
+      width: 350px;
+    }
+
+    @media screen and (min-width: $screen-desktop) {
+      height: 540px;
+      width: 540px;
+    }
   }
   &__image {
     @extend %image-absolute;
   }
 
   &__title {
-    width: 471px;
     margin: 0 auto;
     text-align: center;
-    @include text($H560, 500, $text-color);
+    @include text($H320, 500, $text-color);
     margin-bottom: 34px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      @include text($H360, 500, $text-color);
+    }
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H360, 500, $text-color);
+      width: 300px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      @include text($H560, 500, $text-color);
+    }
   }
+
   &__text {
+    width: auto;
     text-align: center;
-    width: 540px;
     @include text($H200, 500, $text-color);
-    margin-bottom: 55px;
+    margin-bottom: 24px;
+    @media screen and (min-width: $screen-tablet) {
+      @include text($H160, 500, $text-color);
+      margin-bottom: 40px;
+      width: 350px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      width: 450px;
+    }
   }
   &__button {
     text-align: center;
     width: 255px;
+  }
+  &__buttonbig {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 144px;
+    @media screen and (min-width: $screen-tablet) {
+      display: none;
+    }
   }
 }
