@@ -2,7 +2,10 @@
   &__box {
     max-width: $grid-width;
     margin: 0 auto;
-    margin-bottom: 90px;
+    margin-bottom: 32px;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 90px;
+    }
   }
   &__title {
     @include text($H320, 500, $black-text-color);
@@ -33,6 +36,7 @@
   &__holder {
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
     @media screen and (min-width: $screen-desktop) {
       flex-direction: row;
       justify-content: space-between;

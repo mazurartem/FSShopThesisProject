@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="header-page6">
+    <header id="header" class="header-page6">
         <div class="container">
             <div class="header-page6__menu ">
                 <h1 class="header-page6__logo"><img src="images/svg/Logoblack.svg" alt="logo"></h1>
@@ -34,6 +34,42 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header-page6__burger-wrapper">
+                    <button id="burger" class="header-page6__burger burger">
+                        <span class="burger__items-black"></span>
+                        <span class="burger__items-black"></span>
+                        <span class="burger__items-black"></span>
+                    </button>
+                    <div id="menu-backdrop" class="header-page6__burger-menu-backdrop"></div>
+                    <div id="menu" class="header-page6__burger-menu">
+                        <div class="header-page6__burger-menu-img-wrapper">
+                            <img id="krest" class="header-page6__burger-menu-img" src="images/svg/closed.svg" alt="">
+                        </div>
+                        <div class="header-page6__burger-menu-line-wrapper">
+                            <span class="header-page6__burger-menu-line"></span>
+                        </div>
+                        <ul class="header-page6__burger-list">
+                            <li class="header-page6__burger-item">
+                                <a class="header-page6__burger-link" href="index.html#header">Головна</a>
+                            </li>
+                            <li class="header-page6__burger-item">
+                                <a class="header-page6__burger-link" href="index.html#aboutus">Про нас</a>
+                            </li>
+                            <li class="header-page6__burger-item">
+                                <a class="header-page6__burger-link" href="index.html#assortment">Каталог</a>
+                            </li>
+                            <li class="header-page6__burger-item">
+                                <a class="header-page6__burger-link" href="">Доставка та оплата</a>
+                            </li>
+                            <li class="header-page6__burger-item">
+                                <a class="header-page6__burger-link" href="">Блог</a>
+                            </li>
+                            <li class="header-page6__burger-item">
+                                <a class="header-page6__burger-link" href="index.html#footer">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="header-page6__basket"><img src="images/svg/Buscketblack.svg" alt="basket"></div>
             </div>
         </div>
@@ -41,68 +77,70 @@
 
     <div class="main-page6">
         <div class="main-page6__box">
-            <h2 class="main-page6__title">Конструктор подарункового набору</h2>
-            <div class="main-page6__holder">
-                <ul class="main-page6__list">
-                    <li class="main-page6__items">
-                        <div class="main-page6__image-wrapper"><img src="images/svg/ok.svg" alt="">
-                        </div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
-                    </li>
-                    <li class="main-page5__items">
-                        <div class="main-page5__image-wrapper"><img src="images/svg/ok.svg" alt=""></div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div class="main-page6__image-wrapper"><img src="images/svg/ok.svg" alt="">
-                        </div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div class="main-page6__image-wrapper"><img src="images/svg/ok.svg" alt="">
-                        </div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div class="main-page6__image-wrapper"><img src="images/svg/ok.svg" alt="">
-                        </div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
-                    </li>
-                    <li class="main-page6__items">
-                        <div class="main-page6__image-wrapper"><img src="images/svg/gotovuiyellow.svg" alt="">
-                        </div>
-                    </li>
-                </ul>
-                <ul class="main-page6__list-down">
-                    <li class="main-page6__items-down">
-                        <p class="main-page6__text">Склад<br>набору</p>
-                    </li>
-                    <li class="main-page6__items-down">
-                        <p class="main-page6__text">Вага</p>
-                    </li>
-                    <li class="main-page6__items-down">
-                        <p class="main-page6__text">Кому<br>даруємо</p>
-                    </li>
-                    <li class="main-page6__items-down">
-                        <p class="main-page6__text">Подарункова<br>упаковка</p>
-                    </li>
-                    <li class="main-page6__items-down">
-                        <p class="main-page6__text">Листівка</p>
-                    </li>
-                    <li class="main-page6__items-down">
-                        <p class="main-page6__text">Готовий<br>набір</p>
-                    </li>
-                </ul>
+            <div class="container">
+                <h2 class="main-page6__title">Конструктор подарункового набору</h2>
+                <div class="main-page6__holder">
+                    <ul class="main-page6__list">
+                        <li class="main-page6__items">
+                            <div class="main-page6__image-wrapper"><img src="images/svg/ok.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
+                        </li>
+                        <li class="main-page5__items">
+                            <div class="main-page5__image-wrapper"><img src="images/svg/ok.svg" alt=""></div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div class="main-page6__image-wrapper"><img src="images/svg/ok.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div class="main-page6__image-wrapper"><img src="images/svg/ok.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div class="main-page6__image-wrapper"><img src="images/svg/ok.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div><img class="main-page6__line" src="images/svg/linegreen.svg" alt=""></div>
+                        </li>
+                        <li class="main-page6__items">
+                            <div class="main-page6__image-wrapper"><img src="images/svg/gotovuiyellow.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="main-page6__list-down">
+                        <li class="main-page6__items-down">
+                            <p class="main-page6__text">Склад<br>набору</p>
+                        </li>
+                        <li class="main-page6__items-down">
+                            <p class="main-page6__text">Вага</p>
+                        </li>
+                        <li class="main-page6__items-down">
+                            <p class="main-page6__text">Кому<br>даруємо</p>
+                        </li>
+                        <li class="main-page6__items-down">
+                            <p class="main-page6__text">Подарункова<br>упаковка</p>
+                        </li>
+                        <li class="main-page6__items-down">
+                            <p class="main-page6__text">Листівка</p>
+                        </li>
+                        <li class="main-page6__items-down">
+                            <p class="main-page6__text">Готовий<br>набір</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="main-page6__container">
@@ -129,6 +167,8 @@
             <p class="footer__text">&copy; Fruit snack shop, 2020. Всі права захищено.</p>
         </div>
     </footer>
+    <script src="js/burger.js"></script>
+
 </body>
 
 </html>

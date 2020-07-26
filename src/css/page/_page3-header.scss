@@ -5,9 +5,80 @@
     justify-content: space-between;
     padding-top: 40px;
     margin-bottom: 24px;
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 40px;
+      padding-top: 40px;
+    }
   }
   &__logo {
-    padding-left: 25px;
+    @media screen and (min-width: $screen-desktop) {
+      padding-left: 25px;
+    }
+  }
+  &__navigation {
+    display: none;
+    @media screen and (min-width: $screen-desktop) {
+      display: block;
+    }
+  }
+  &__burger {
+    background-color: $black-text-color;
+  }
+  &__burger-wrapper {
+    display: block;
+    order: -1;
+    @media screen and (min-width: $screen-desktop) {
+      display: none;
+    }
+  }
+  &__burger-menu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: $nav-color;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: none;
+  }
+  .active &__burger-menu {
+    display: block;
+  }
+
+  &__burger-menu-img-wrapper {
+    text-align: right;
+    padding-right: 10px;
+  }
+  &__burger-menu-img {
+    cursor: pointer;
+  }
+  &__burger-menu-line-wrapper {
+    padding-right: 40px;
+    margin-bottom: 12px;
+  }
+  &__burger-menu-line {
+    display: block;
+    width: auto;
+    height: 2px;
+    background-color: $black-text-color;
+  }
+  &__burger-link {
+    @include text($H240, 500, $black-text-color);
+  }
+  &__burger-menu-backdrop {
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+  }
+  .active &__burger-menu-backdrop {
+    display: block;
   }
   &__list {
     display: flex;
@@ -15,16 +86,29 @@
   }
   &__list-item {
     &:not(:last-child) {
-      margin-right: 75px;
+      margin-right: 29px;
+    }
+    @media screen and (min-width: $screen-fullhd) {
+      &:not(:last-child) {
+        margin-right: 75px;
+      }
     }
   }
   &__list-item-link {
-    @include text($H240, 700, $black-text-color);
+    @include text($H200, 700, $black-text-color);
+    @media screen and (min-width: 1100px) {
+      @include text($H240, 700, $black-text-color);
+    }
+    @media screen and (min-width: $screen-fullhd) {
+      @include text($H240, 700, $black-text-color);
+    }
     &:hover {
       color: #b6ce95;
     }
   }
   &__basket {
-    padding-right: 25px;
+    @media screen and (min-width: $screen-desktop) {
+      padding-right: 25px;
+    }
   }
 }

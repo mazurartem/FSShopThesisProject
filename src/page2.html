@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="header-page2">
+    <header id="header" class="header-page2">
         <div class="container">
             <div class="header-page2__menu ">
                 <h1 class="header-page2__logo"><img src="images/svg/Logoblack.svg" alt="logo"></h1>
@@ -35,6 +35,42 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header-page2__burger-wrapper">
+                    <button id="burger" class="header-page2__burger burger">
+                        <span class="burger__items-black"></span>
+                        <span class="burger__items-black"></span>
+                        <span class="burger__items-black"></span>
+                    </button>
+                    <div id="menu-backdrop" class="header-page2__burger-menu-backdrop"></div>
+                    <div id="menu" class="header-page2__burger-menu">
+                        <div class="header-page2__burger-menu-img-wrapper">
+                            <img id="krest" class="header-page2__burger-menu-img" src="images/svg/closed.svg" alt="">
+                        </div>
+                        <div class="header-page2__burger-menu-line-wrapper">
+                            <span class="header-page2__burger-menu-line"></span>
+                        </div>
+                        <ul class="header-page2__burger-list">
+                            <li class="header-page2__burger-item">
+                                <a class="header-page2__burger-link" href="index.html#header">Головна</a>
+                            </li>
+                            <li class="header-page2__burger-item">
+                                <a class="header-page2__burger-link" href="index.html#aboutus">Про нас</a>
+                            </li>
+                            <li class="header-page2__burger-item">
+                                <a class="header-page2__burger-link" href="index.html#assortment">Каталог</a>
+                            </li>
+                            <li class="header-page2__burger-item">
+                                <a class="header-page2__burger-link" href="">Доставка та оплата</a>
+                            </li>
+                            <li class="header-page2__burger-item">
+                                <a class="header-page2__burger-link" href="">Блог</a>
+                            </li>
+                            <li class="header-page2__burger-item">
+                                <a class="header-page2__burger-link" href="index.html#footer">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="header-page2__basket"><img src="images/svg/Buscketblack.svg" alt="basket"></div>
             </div>
         </div>
@@ -43,130 +79,132 @@
     <div class="main-page2">
 
         <div class="main-page2__box">
-            <h2 class="main-page2__title">Конструктор подарункового набору</h2>
-            <div class="main-page2__holder">
-                <ul class="main-page2__list">
-                    <li class="main-page2__items">
-                        <div class="main-page2__image-wrapper"><img src="images/svg/ok.svg" alt="">
-                        </div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div><img class="main-page2__line" src="images/svg/linegreen.svg" alt=""></div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div class="main-page2__image-wrapper"><img src="images/svg/vagayellow.svg" alt=""></div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div><img class="main-page2__line" src="images/svg/line.svg" alt=""></div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div class="main-page2__image-wrapper"><img src="images/svg/familygrey.svg" alt="">
-                        </div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div><img class="main-page2__line" src="images/svg/line.svg" alt=""></div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div class="main-page2__image-wrapper"><img src="images/svg/podarokgrey.svg" alt="">
-                        </div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div><img class="main-page2__line" src="images/svg/line.svg" alt=""></div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div class="main-page2__image-wrapper"><img src="images/svg/lustivkagrey.svg" alt="">
-                        </div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div><img class="main-page2__line" src="images/svg/line.svg" alt=""></div>
-                    </li>
-                    <li class="main-page2__items">
-                        <div class="main-page2__image-wrapper"><img src="images/svg/gotovuigrey.svg" alt="">
-                        </div>
-                    </li>
-                </ul>
-                <ul class="main-page2__list-down">
-                    <li class="main-page2__items-down">
-                        <p class="main-page2__text">Склад<br>набору</p>
-                    </li>
-                    <li class="main-page2__items-down">
-                        <p class="main-page2__text">Вага</p>
-                    </li>
-                    <li class="main-page2__items-down">
-                        <p class="main-page2__text">Кому<br>даруємо</p>
-                    </li>
-                    <li class="main-page2__items-down">
-                        <p class="main-page2__text">Подарункова<br>упаковка</p>
-                    </li>
-                    <li class="main-page2__items-down">
-                        <p class="main-page2__text">Листівка</p>
-                    </li>
-                    <li class="main-page2__items-down">
-                        <p class="main-page2__text">Готовий<br>набір</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="main-page2__container">
-                <ul class="main-page2__container-list">
-                    <li class="main-page2__container-item">
-                        <div class="main-page2__container-box">
-                            <label for="card1" class="main-page2__container-label">
-                                <img class="main-page2__container-img" src="images/100g.png" alt="">
-                                <input class="main-page2__container-input" id="card1" type="radio" name="ves">
-                                <span class="main-page2__container-text">100 г</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="main-page2__container-item">
-                        <div class="main-page2__container-box">
-                            <label for="card2" class="main-page2__container-label">
-                                <img class="main-page2__container-img" src="images/150g.png" alt="">
-                                <input class="main-page2__container-input" id="card2" type="radio" name="ves">
-                                <span class="main-page2__container-text">150 г</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="main-page2__container-item">
-                        <div class="main-page2__container-box">
-                            <label for="card3" class="main-page2__container-label">
-                                <img class="main-page2__container-img" src="images/200g.png" alt="">
-                                <input class="main-page2__container-input" id="card3" type="radio" name="ves">
-                                <span class="main-page2__container-text">200 г</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="main-page2__container-item">
-                        <div class="main-page2__container-box">
-                            <label for="card4" class="main-page2__container-label">
-                                <img class="main-page2__container-img" src="images/250g.png" alt="">
-                                <input class="main-page2__container-input" id="card4" type="radio" name="ves">
-                                <span class="main-page2__container-text">250г</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="main-page2__container-item">
-                        <div class="main-page2__container-box">
-                            <label for="card5" class="main-page2__container-label">
-                                <img class="main-page2__container-img" src="images/300g.png" alt="">
-                                <input class="main-page2__container-input" id="card5" type="radio" name="ves">
-                                <span class="main-page2__container-text">300 г</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li class="main-page2__container-item">
-                        <div class="main-page2__container-box">
-                            <label for="card6" class="main-page2__container-label">
-                                <img class="main-page2__container-img" src="images/500g.png" alt="">
-                                <input class="main-page2__container-input" id="card6" type="radio" name="ves">
-                                <span class="main-page2__container-text">500 г</span>
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="main-page2__button-box">
-                <a class="main-page2__button button-green" href="page1.html">НАЗАД</a>
-                <a class="main-page2__button button-green" href="page3.html">ДАЛІ</a>
+            <div class="container">
+                <h2 class="main-page2__title">Конструктор подарункового набору</h2>
+                <div class="main-page2__holder">
+                    <ul class="main-page2__list">
+                        <li class="main-page2__items">
+                            <div class="main-page2__image-wrapper"><img src="images/svg/ok.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div><img class="main-page2__line" src="images/svg/linegreen.svg" alt=""></div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div class="main-page2__image-wrapper"><img src="images/svg/vagayellow.svg" alt=""></div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div><img class="main-page2__line" src="images/svg/line.svg" alt=""></div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div class="main-page2__image-wrapper"><img src="images/svg/familygrey.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div><img class="main-page2__line" src="images/svg/line.svg" alt=""></div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div class="main-page2__image-wrapper"><img src="images/svg/podarokgrey.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div><img class="main-page2__line" src="images/svg/line.svg" alt=""></div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div class="main-page2__image-wrapper"><img src="images/svg/lustivkagrey.svg" alt="">
+                            </div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div><img class="main-page2__line" src="images/svg/line.svg" alt=""></div>
+                        </li>
+                        <li class="main-page2__items">
+                            <div class="main-page2__image-wrapper"><img src="images/svg/gotovuigrey.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="main-page2__list-down">
+                        <li class="main-page2__items-down">
+                            <p class="main-page2__text">Склад<br>набору</p>
+                        </li>
+                        <li class="main-page2__items-down">
+                            <p class="main-page2__text">Вага</p>
+                        </li>
+                        <li class="main-page2__items-down">
+                            <p class="main-page2__text">Кому<br>даруємо</p>
+                        </li>
+                        <li class="main-page2__items-down">
+                            <p class="main-page2__text">Подарункова<br>упаковка</p>
+                        </li>
+                        <li class="main-page2__items-down">
+                            <p class="main-page2__text">Листівка</p>
+                        </li>
+                        <li class="main-page2__items-down">
+                            <p class="main-page2__text">Готовий<br>набір</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-page2__container">
+                    <ul class="main-page2__container-list">
+                        <li class="main-page2__container-item">
+                            <div class="main-page2__container-box">
+                                <label for="card1" class="main-page2__container-label">
+                                    <img class="main-page2__container-img" src="images/100g.png" alt="">
+                                    <input class="main-page2__container-input" id="card1" type="radio" name="ves">
+                                    <span class="main-page2__container-text">100 г</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="main-page2__container-item">
+                            <div class="main-page2__container-box">
+                                <label for="card2" class="main-page2__container-label">
+                                    <img class="main-page2__container-img" src="images/150g.png" alt="">
+                                    <input class="main-page2__container-input" id="card2" type="radio" name="ves">
+                                    <span class="main-page2__container-text">150 г</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="main-page2__container-item">
+                            <div class="main-page2__container-box">
+                                <label for="card3" class="main-page2__container-label">
+                                    <img class="main-page2__container-img" src="images/200g.png" alt="">
+                                    <input class="main-page2__container-input" id="card3" type="radio" name="ves">
+                                    <span class="main-page2__container-text">200 г</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="main-page2__container-item">
+                            <div class="main-page2__container-box">
+                                <label for="card4" class="main-page2__container-label">
+                                    <img class="main-page2__container-img" src="images/250g.png" alt="">
+                                    <input class="main-page2__container-input" id="card4" type="radio" name="ves">
+                                    <span class="main-page2__container-text">250г</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="main-page2__container-item">
+                            <div class="main-page2__container-box">
+                                <label for="card5" class="main-page2__container-label">
+                                    <img class="main-page2__container-img" src="images/300g.png" alt="">
+                                    <input class="main-page2__container-input" id="card5" type="radio" name="ves">
+                                    <span class="main-page2__container-text">300 г</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="main-page2__container-item">
+                            <div class="main-page2__container-box">
+                                <label for="card6" class="main-page2__container-label">
+                                    <img class="main-page2__container-img" src="images/500g.png" alt="">
+                                    <input class="main-page2__container-input" id="card6" type="radio" name="ves">
+                                    <span class="main-page2__container-text">500 г</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-page2__button-box">
+                    <a class="main-page2__button button-green" href="page1.html">НАЗАД</a>
+                    <a class="main-page2__button button-green" href="page3.html">ДАЛІ</a>
+                </div>
             </div>
         </div>
 
@@ -185,6 +223,8 @@
             <p class="footer__text">&copy; Fruit snack shop, 2020. Всі права захищено.</p>
         </div>
     </footer>
+    <script src="js/burger.js"></script>
+
 </body>
 
 </html>
