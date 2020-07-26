@@ -1,4 +1,6 @@
 .main-page4 {
+  max-width: $max-width;
+  margin: 0 auto;
   &__box {
     width: $grid-width;
     margin: 0 auto;

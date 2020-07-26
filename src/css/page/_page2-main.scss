@@ -1,6 +1,8 @@
 .main-page2 {
+  max-width: $max-width;
+  margin: 0 auto;
   &__box {
-    width: $grid-width;
+    max-width: $grid-width;
     margin: 0 auto;
     margin-bottom: 144px;
   }

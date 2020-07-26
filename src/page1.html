@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="header-page1">
+    <header id="header" class="header-page1">
         <div class="container">
             <div class="header-page1__menu ">
                 <h1 class="header-page1__logo"><img src="images/svg/Logoblack.svg" alt="logo"></h1>
@@ -36,6 +36,42 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header-page1__burger-wrapper">
+                    <button id="burger" class="header-page1__burger burger">
+                        <span class="burger__items-black"></span>
+                        <span class="burger__items-black"></span>
+                        <span class="burger__items-black"></span>
+                    </button>
+                    <div id="menu-backdrop" class="header-page1__burger-menu-backdrop"></div>
+                    <div id="menu" class="header-page1__burger-menu">
+                        <div class="header-page1__burger-menu-img-wrapper">
+                            <img id="krest" class="header-page1__burger-menu-img" src="images/svg/closed.svg" alt="">
+                        </div>
+                        <div class="header-page1__burger-menu-line-wrapper">
+                            <span class="header-page1__burger-menu-line"></span>
+                        </div>
+                        <ul class="header-page1__burger-list">
+                            <li class="header-page1__burger-item">
+                                <a class="header-page1__burger-link" href="index.html#header">Головна</a>
+                            </li>
+                            <li class="header-page1__burger-item">
+                                <a class="header-page1__burger-link" href="index.html#aboutus">Про нас</a>
+                            </li>
+                            <li class="header-page1__burger-item">
+                                <a class="header-page1__burger-link" href="index.html#assortment">Каталог</a>
+                            </li>
+                            <li class="header-page1__burger-item">
+                                <a class="header-page1__burger-link" href="">Доставка та оплата</a>
+                            </li>
+                            <li class="header-page1__burger-item">
+                                <a class="header-page1__burger-link" href="">Блог</a>
+                            </li>
+                            <li class="header-page1__burger-item">
+                                <a class="header-page1__burger-link" href="index.html#footer">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="header-page1__basket"><img src="images/svg/Buscketblack.svg" alt="basket"></div>
             </div>
         </div>
@@ -183,6 +219,7 @@
             <p class="footer__text">&copy; Fruit snack shop, 2020. Всі права захищено.</p>
         </div>
     </footer>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>
