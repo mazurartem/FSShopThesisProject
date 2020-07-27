@@ -19,6 +19,7 @@
   }
   &__holder {
     display: none;
+    // display: block;
     @media screen and (min-width: 1280px) {
       display: block;
     }

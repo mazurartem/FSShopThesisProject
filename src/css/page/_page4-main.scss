@@ -101,13 +101,25 @@
   }
   &__button-box {
     margin: 0 auto;
-    width: 540px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 320px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      width: 375px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      width: 535px;
+    }
   }
   &__button {
     text-align: center;
-    width: 255px;
+    width: 145px;
+    @media screen and (min-width: $screen-iphone-plus) {
+      width: 165px;
+    }
+    @media screen and (min-width: $screen-tablet) {
+      width: 250px;
+    }
   }
 }
