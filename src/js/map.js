@@ -1,4 +1,4 @@
-var map = L.map("map").setView([0, 0], 1);
+var map = L.map("map").setView([49.068, 33.4204], 10);
 
 L.tileLayer(
   "https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=EA3jla9XBTGO9g76nilk",

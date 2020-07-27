@@ -62,6 +62,7 @@
       width: 350px;
     }
     @media screen and (min-width: $screen-desktop) {
+      @include text($H200, 500, $text-color);
       width: 450px;
     }
   }

@@ -64,6 +64,7 @@
     }
     @media screen and (min-width: $screen-desktop) {
       width: 450px;
+      @include text($H200, 500, $text-color);
     }
   }
   &__button {
